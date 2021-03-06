@@ -1,5 +1,5 @@
-#ifndef STRING_H_
-#define STRING_H_
+#ifndef MYSTRING_H_
+#define MYSTRING_H_
 
 class MyString {
 public:
@@ -26,4 +26,4 @@ private:
 };
 
 
-#endif // STRING_H_
+#endif // MYSTRING_H_
