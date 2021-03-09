@@ -68,15 +68,11 @@ int main()
 	MyString s7 = "Hello, ", s8 = "world";
 	s7.print();
 	cout << "size: " << s7.Size() << endl;
-	s7 + s8;
+	s7 = s7 + s8;
 	cout << "->" << endl;
 	s7.print();
 	cout << "size: " << s7.Size() << endl;
 
-	cout << "----------------------" << endl;
 
-
-
-
-    return 0;
+	return 0;
 }
