@@ -8,8 +8,8 @@ public:
 	~MyString();
 	MyString& operator = (const MyString& s);
 	MyString& operator = (const char* s);
-	MyString& operator + (const MyString& s);
-	MyString& operator + (const char* s);
+	MyString operator + (const MyString& s);
+	MyString operator + (const char* s);
 
 	unsigned Size() const;
 	void resize(unsigned n_size);

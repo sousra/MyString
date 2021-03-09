@@ -40,14 +40,16 @@ MyString& MyString::operator = (const char* s) {
 	return *this;
 }
 
-MyString& MyString::operator + (const MyString& s) {
-	concatenate(s);
-	return *this;
+MyString MyString::operator + (const MyString& s) {
+	MyString res = *this;
+	res.concatenate(s);
+	return res;
 }
 
-MyString& MyString::operator + (const char* s) {
-	concatenate(s);
-	return *this;
+MyString MyString::operator + (const char* s) {
+	MyString res = *this;
+	res.concatenate(s);
+	return res;
 }
 
 
